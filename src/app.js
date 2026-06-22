@@ -1,8 +1,8 @@
 //write your code here
-console.log("Hello Rigo from the console!");
 
-const juego = (userChoice) => {
-  const opcionUsuario = userChoice 
+
+function juego(userChoice) {
+  const opcionUsuario = userChoice
   const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 
   const opcionComputadora =
@@ -18,11 +18,9 @@ const juego = (userChoice) => {
 
   let resultado;
 
-if (opcionUsuario === opcionComputadora) 
-  {  resultado = "Draw";} 
-else if (rules[opcionUsuario].includes(opcionComputadora)) 
-  {  resultado = "You win";}
-else {  resultado = "You lose";}
+  if (opcionUsuario === opcionComputadora) { resultado = "Draw"; }
+  else if (rules[opcionUsuario].includes(opcionComputadora)) { resultado = "You win"; }
+  else { resultado = "You lose"; }
 
   console.log("Usuario eligio: " + opcionUsuario);
   console.log("Computadora eligio: " + opcionComputadora);
